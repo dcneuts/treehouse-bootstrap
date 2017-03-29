@@ -43,9 +43,9 @@
      data-target="#register">
     <div class="container text-sm-center">
         <h1 class="display-1">Full Stack Conf</h1>
-        <p class="lead">Coming Soon, a One-Day Conference About All Things JavaScript!</p>
+        <p class="lead font-weight-bold">Coming Soon, a One-Day Conference About All Things JavaScript!</p>
         <div class="btn-group mt-2 pb-3" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+            <button type="button" id="register" class="btn btn-primary btn-lg">Register Now</button>
             <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
         </div>
     </div>
@@ -281,8 +281,8 @@
 <div id="register" class="modal fade">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Register for Full Stack Conf</h5>
+            <div class="modal-header bg-info text-white">
+                <h4 class="modal-title font-weight-bold">Register for Full Stack Conf</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -301,7 +301,7 @@
                     </div>
                     <div class="form-group">
                         <label for="role">Role:</label>
-                        <select class="custom-select form-control" id="role" name="user_role">
+                        <select class="form-control custom-select" id="role" name="user_role">
                             <option value="full stack js developer">Full Stack JavaScript Developer</option>
                             <option value="front end developer">Front End Developer</option>
                             <option value="back end developer">Back End Developer</option>
@@ -310,9 +310,45 @@
                         </select>
                     </div>
 
-                    <hr class="my-2">
-                    <h5 class="mb-2">Which Topics Interest You?</h5>
-
+                    <hr class="my-4">
+                    <h5 class="mb-4">Which Topics Interest You?</h5>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">JavaScript Frameworks</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">JavaScript Libraries</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Node.js</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Build Tools</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">ES2015</span>
+                            </label>
+                        </div>
+                    </div>
                 </form>
                 <!--/Registration Form-->
             </div>
